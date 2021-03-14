@@ -57,7 +57,7 @@ namespace RobotCleaner.Robot
             var squash = Squash(intersections).ToList();
 
             // calculate new number of cleaned spaces with this move
-            CleanedSpaces += section.Length - squash.Sum(x => x.Length);
+            CleanedSpaces += section.Coverage - squash.Sum(x => x.Coverage);
 
             // store this path section to consider it in the future
             sections.Add(section);
