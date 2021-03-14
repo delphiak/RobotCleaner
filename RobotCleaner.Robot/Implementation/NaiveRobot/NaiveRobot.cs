@@ -8,6 +8,12 @@ namespace RobotCleaner.Robot
     /// Naive robot implementation
     /// Highly memory consumptive, due to large space of possible places to visit
     /// It just marks if the place was visit or not and returns number of visitied, unique places
+    /// 
+    /// Time complexity: O(n*k) 
+    /// Space complexity: O(k*k)
+    /// 
+    /// n - number of moves
+    /// k - range of coordinates to cover
     /// </summary>
     public class NaiveRobot : IRobot
     {

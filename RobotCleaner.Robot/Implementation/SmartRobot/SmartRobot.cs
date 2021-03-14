@@ -7,7 +7,12 @@ namespace RobotCleaner.Robot
 {
     /// <summary>
     /// Smart robot implementation
-    /// Takes much more time to process every move, but memory consumtion is at O(moves)
+    /// Takes much more time to process every move, but memory consumtion is much lower
+    /// 
+    /// Time complexity: O(n*n) 
+    /// Space complexity: O(n)
+    /// 
+    /// n - number of moves
     /// </summary>
     public class SmartRobot : IRobot
     {
